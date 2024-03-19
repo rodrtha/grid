@@ -9,28 +9,29 @@ header{
     display: grid;
     width: 100%;
     height: 15vh;
-    grid-template-areas:
-    "a b b";
+    grid-area: header;
+    grid-template-areas: "a b b";
+    grid-template-columns: 25vw 75vw;
 }
 
 .container {
-    display: grid;
-    height: 50vh;
-    width: 50vw;
-    grid-template-areas:
-    "c1 d e1"
-    "c2 d e2";
-    gap: 10px;
+    height: 400px;
+    width: 800px;
     margin: auto;
-    background-color: rgb(250, 185, 185);
+    display: grid;
+    background-color: rgb(255, 4, 4);
+    margin-bottom: 50px;
+    margin-top: 78px;
+    grid-template-areas: 
+                        "c1 d e1"
+                        "c2 d e2";
+    gap: 10px; 
 }
 
 footer{
-    display: grid;
-    width: 100%;
-    height: 15vh;
-    grid-template-areas:
-    "f f f";
+    background-color: rgb(201, 255, 146);
+    width: 100vw;
+    height: 8vw;
 }
 
 .a {
@@ -39,7 +40,7 @@ footer{
 }
 
 .b {
-    background-color: rgb(48, 127, 218);
+    background-color: rgb(10, 39, 73);
     grid-area: b;
 }
 
