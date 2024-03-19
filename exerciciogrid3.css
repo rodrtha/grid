@@ -19,7 +19,7 @@ header{
     width: 800px;
     margin: auto;
     display: grid;
-    background-color: rgb(255, 4, 4);
+    background-color: rgb(0, 0, 0);
     margin-bottom: 50px;
     margin-top: 78px;
     grid-template-areas: 
