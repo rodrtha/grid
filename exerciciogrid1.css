@@ -20,26 +20,43 @@ body {
 }
 
 .a {
-    background-color: brown;
+    background-color: #ce8e93;
     grid-area: a;
 }
 
 .b1 {
-    background-color: rgb(10, 73, 145);
+    background-color:#976464;
     grid-area: b1;
 }
 
 .b2 {
-    background-color: rgb(255, 251, 0);
+    background-color: #88b8b8;
     grid-area: b2;
 }
 
 .b3 {
-    background-color: rgb(40, 39, 71);
+    background-color: #a37979;
     grid-area: b3;
 }
 
 .c {
-    background-color: rgb(32, 75, 15);
+    background-color: rgb(255, 183, 183); 
     grid-area: c;
 }
+
+@media screen and (max-width: 550px) {
+    .container {
+        grid-template-areas: 
+        "a a"
+        "a a"
+        "a a"
+        "b1 b1"
+        "b2 b2"
+        "b3 b3"
+        "c c"
+        "c c";
+        width: 90%;
+        height: 700px;
+    }
+}
+
