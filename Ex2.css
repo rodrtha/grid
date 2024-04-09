@@ -1,0 +1,59 @@
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    height: 970px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    grid-template-areas:
+    "cima cima cima"
+    "lateral meio1 meio1"
+    "lateral meio2 meio2";
+    column-gap: 10px;
+}
+
+.cima {
+    background-color: rgb(218, 48, 48);
+    grid-area: cima;
+}
+
+.lateral {
+    background-color: rgb(59, 236, 24);
+    grid-area: lateral;
+}
+
+.meio1 {
+    background-color: rgb(0, 0, 0);
+    grid-area: meio1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.meio2 {
+    background-color: rgb(38, 18, 221);
+    grid-area: meio2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        grid-template-areas: 
+        "cima"
+        "lateral"
+        "meio1"
+        "meio2";
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr 2fr 3fr;
+    }
+}
+

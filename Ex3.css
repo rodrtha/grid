@@ -1,0 +1,93 @@
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: grid;
+    width: 100%;
+    height: 15vh;
+    grid-area: header;
+    grid-template-areas: "cima1 cima2";
+    grid-template-columns: 75fr 25fr;
+}
+
+.container {
+    display: grid;
+    height: 750px;
+    width: 1050px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    grid-template-areas: 
+    "a1 a2 lateral"
+    "a3 a4 lateral"
+    "baixo baixo baixo";
+    gap: 10px; 
+}
+
+.cima1 {
+    background-color: rgb(255, 0, 119);
+    grid-area: cima1;
+}
+
+.cima2 {
+    background-color: rgb(21, 58, 221);
+    grid-area: cima2;
+}
+
+.a1 {
+    background-color: rgb(0, 0, 0);
+    grid-area: a1;
+}
+
+.a2 {
+    background-color: rgb(0, 0, 0);
+    grid-area: a2;
+}
+
+.a3 {
+    background-color: rgb(0, 0, 0);
+    grid-area: a3;
+}
+
+.a4 {
+    background-color: rgb(0, 0, 0);
+    grid-area: a4;
+}
+
+.lateral {
+    background-color: rgb(66, 20, 20);
+    grid-area: lateral;
+}
+
+.baixo {
+    background-color: rgb(57, 228, 14);
+    grid-area: baixo;
+}
+
+ @media screen and (max-width: 600px) {
+    header{
+        display: grid;
+        grid-template-areas: 
+        "cima1"
+        "cima2";
+        grid-template-columns: 100fr;
+        height: 200px;
+    }
+    
+    .container {
+        grid-template-areas: 
+        "a1 a2"
+        "a3 a4"
+        "lateral lateral"
+        "lateral lateral"
+        "baixo baixo";
+        width: 100%;
+        height: 140vw;
+        margin-top: 10px;
+    } 
+}
+
